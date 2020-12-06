@@ -52,16 +52,12 @@ int day2()
     std::vector<std::string> input = read_input(ifs);
 
 
-    std::vector<PasswordInput*> pwdInput{};
-    for (std::string line : input) {
-        pwdInput.push_back(new PasswordInput(line));
-    }
-
     int valid = 0;
     int valid2 = 0;
-    for (PasswordInput* i : pwdInput) {
-        if (i->isValid()) valid++;
-        if (i->isValid2()) valid2++;
+    for (std::string line : input) {
+        PasswordInput pwdInput(line);
+        if (pwdInput.isValid()) valid++;
+        if (pwdInput.isValid2()) valid2++;
     }
     std::cout << "valid passwords: " << valid << std::endl;
     std::cout << "valid passwords: " << valid2 << std::endl;

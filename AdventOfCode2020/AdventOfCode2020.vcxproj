@@ -140,12 +140,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Day1.cpp" />
+    <ClCompile Include="Day2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Reader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="days.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day1Input.txt" />
+    <Text Include="Day2Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

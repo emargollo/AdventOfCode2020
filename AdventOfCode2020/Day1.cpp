@@ -1,12 +1,8 @@
-#include <iostream>
-#include <fstream>
-#include <iterator>
-#include <algorithm>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <algorithm>
+#pragma once
+
+#include "pch.h"
 #include "reader.h"
+#include "days.h"
 
 int sum_vector(std::vector<int> combination) {
     int sum = 0;
@@ -52,7 +48,7 @@ int findCombination(std::vector<int> numbers, int target, int combinationTarget,
     return -1;
 }
 
-int main(int argc, char* argv[])
+int day1()
 {
     std::ifstream ifs("Day1Input.txt", std::ifstream::in);
     std::vector<int> input = read_ints(ifs);
